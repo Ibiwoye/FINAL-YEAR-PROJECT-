@@ -1,0 +1,22 @@
+<html>
+  {% extends 'base.html' %}
+  {% block content %}
+<body>
+
+  <form action="{%url 'result' %}" method='POST'>
+
+{% csrf_token %}
+<div class='col-md-4 col-sm-4'><label for="fname">English</label></div><input name='English' type='text' value=1><br><br>
+<div class='col-md-4 col-sm-4'><label for="fname">Mathematics</label></div><input name='Mathematics' type='text' value=2><br><br>
+<div class='col-md-4 col-sm-4'><label for="fname">Agricultural Science </label></div><input name='Agricultural_Science' type='text' value=3><br><br>
+<div class='col-md-4 col-sm-4'><label for="fname">Basic Science </label></div><input name='Basic_Science' type='text' value=4><br><br>
+<div class='col-md-4 col-sm-4'><label for="fname">Basic Technology</label></div><input name='BAsic_Technology' type='text' value=5><br><br>
+<div class='col-md-4 col-sm-4'><label for="fname">Business Studies</label></div><input name='Business_Studies' type='text' value=6><br><br>
+<div class='col-md-4 col-sm-4'><label for="fname">Social Studies</label></div><input name='Social_Studies' type='text' value=7><br><br>
+    <input type='submit' name='' value='PREDICT'>
+  </form>
+{%  endblock  %}
+</body>
+</html>
+
+
